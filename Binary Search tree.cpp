@@ -30,6 +30,10 @@ public:
         newNode->info = element; // assign value to the data field of the new node
         newNode->leftchild = NULL; // Make the left child of the new node point to null
         newNode->rightchild = NULL; // Make the right child  of the new node point to null
+
+        Node* parent = NULL;
+        Node* currentNode = NULL;
+        search(element, parent, currentNode); // Locate the node which will be the parent of the node to be inserted
     }
 }
 
